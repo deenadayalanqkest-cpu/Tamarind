@@ -27,7 +27,7 @@ export default function TamarindSeedsWebsite() {
         form.append('mobile', formData.mobile);
         form.append('description', formData.message);
 
-        const response = await fetch('http://localhost:8000/contact', {
+        const response = await fetch("/api/contact", {
           method: 'POST',
           body: form
         });
